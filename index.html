@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Website</title>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-logo">
+            <img src="./img/revo.png" alt="revou-logo"></div>
+        <nav class="nav">
+            <a class="nav-item">Home</a>
+            <a href="#profile" class="nav-item">Our Profile</a>
+            <a class="nav-item">Portofolio</a>
+            <a href="#message-us" class="nav-item">Message Us</a>
+            </nav>        
+        </div>
+    </header>
+    <section class="banner">
+        <div class="greetings">
+        <h1>Hi <span id="username">Anggi</span>, Welcome to website</h1>
+        <p>Ini adalah website latihan pertama</p> 
+        <!-- <script src="js/script.js"></script> -->
+        <div>
+            <img
+            class="img-slideshow"
+            src="./img/9231.jpg"
+            />
+        </div>
+        <div>
+            <img
+            class="img-slideshow"
+            src="./img/jenisrevou.png"
+            />
+        </div>
+        <div>
+            <img
+            class="img-slideshow"
+            src="./img/revouprograms.jpeg"
+            />
+        </div>
+    </div>
+    </section>
+    <section id="profile" class="headquarters">
+        <h1>Our Headquarters</h1>
+        <div class="hq-items">
+            <div class="circle">Jakarta</div>
+            <div class="circle1">Bandung</div>
+            <div class="circle2">Surabaya</div>
+        </div>
+        <div class="about">
+            <h1>RevoU Culture</h1>
+            <p>When thinking about our distinctive Culture and how we operate as an Organization, we asked ourselves two fundamental questions:
+            </br>1. What is uniquely particular about RevoU?
+            </br>2. What is it that our employees experience here, that they won’t experience elsewhere?
+            </br>In answering such questions, we first came up with a list of industry standard values. Values that, despite being an integral part of our culture, we share with many other employers in the job market. Especially the ones we compete with to attract the very best talent, that is other tech start ups.
+            </br>
+            </br>These are values such as:
+            </br>• Collaboration & teamwork
+            </br>• Integrity
+            </br>• Customer centricity
+            </br>For as much as we shouldn’t take these for granted, we believe that these are not what make us truly unique. Not what we fully aspire to. Not the ones to keep ourselves accountable in our day-to-day life at RevoU to pursue our vision to make RevoU the most inspiring and career defining place to work in Southeast Asia.
+            </br>So, what are the distinctive values that makes us uniquely RevoU?</p>
+        </div>
+    </section>
+    <section id="message-us" class="form">
+        <div class="form-left">
+            <form name="message-form" onsubmit="event.preventDefault();">
+               <table>
+                    <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td>
+                    <input required name="nama" type="text" placeholder="Nama">
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>Tanggal Lahir</td>
+                    <td>:</td>
+                    <td>
+                    <input type="date" name="birthdate"/>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td>
+                        <input id="lakilaki" type="radio" name="jenkel" value="Laki-laki"/>
+                        <label for="lakilaki">Laki-laki</label>
+                        <input id="perempuan" type="radio" name="jenkel" value="perempuan"/>
+                        <label for="perempuan">Perempuan</label>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>Pesan</td>
+                        <td>:</td>
+                        <td>
+                        <textarea name="messages" id="pesan" rows="8" cols="40">Ketik pesan</textarea>
+                        </td>
+                        </tr>
+                </table>
+                <input class="submit" type="submit" onclick="validateForm()" value="Submit">
+            </form>
+            
+        </div>
+        <div class="form-right">
+            <p>Nama: <span id="sender-fullname"></span></p>
+            <p>Tanggal Lahir: <span id="sender-birthdate"></span></p>
+            <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+            <p>Pesan: <span id="sender-messages"></span></p>
+        </div>
+    </section>
+    <footer class="footer">
+    <p class="footer-text">made by anggiap © 2023 </p>
+    </footer>
+    <script src="./js/script.js"></script>
+    </body>
+</html>
