@@ -48,14 +48,6 @@
     background-color: #12296C;
     font-family: Arial, Helvetica, sans-serif;
 }
-.headquarters-profile{
-    padding: 5em;
-    padding-left: 10px;
-    text-align: left;
-    color: yellow;
-    background-color: #12296C;
-    font-family: Arial, Helvetica, sans-serif;
-}
 .circle{
     height:150px;
     width: 150px;
@@ -92,6 +84,7 @@
 }
 .about{
     text-align: left;
+    color: white;
 }
 .form{
     background-color: #FBDA03;
