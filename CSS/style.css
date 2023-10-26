@@ -41,6 +41,10 @@
     background-size: cover; */
     /* height: 500px; */
 }
+.img-slideshow{
+    width: 100%;
+    height: 100%;
+}
 .headquarters{
     padding: 5em;
     text-align: center;
@@ -95,6 +99,13 @@
     padding-left: 20px;
     padding-bottom: 10px;
 }
+.form-right{
+    box-sizing: border-box;
+    border: 1px solid black;
+    flex: 2;
+    padding-left: 10px;
+    margin-right: 10px;
+}
 .submit{
     height: 30px;
     width: 430px;
@@ -123,7 +134,7 @@
     }
     .img-slideshow{
         width: 100%;
-        height: 100;
+        height: 100%;
         align-items: center;
     }
     .hq-items{
